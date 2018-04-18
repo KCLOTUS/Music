@@ -3,7 +3,7 @@
 //  音乐播放
 //
 //  Created by 万家乐 on 2018/4/10.
-//  Copyright © 2028年 万家乐. All rights reserved.
+//  Copyright © 2018年 万家乐. All rights reserved.
 //
 
 #import "ViewController.h"
