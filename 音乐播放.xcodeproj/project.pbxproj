@@ -1,0 +1,397 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7EB0CA77207C59F000EE5680 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB0CA76207C59F000EE5680 /* AppDelegate.m */; };
+		7EB0CA7A207C59F000EE5680 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB0CA79207C59F000EE5680 /* ViewController.m */; };
+		7EB0CA7D207C59F000EE5680 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EB0CA7B207C59F000EE5680 /* Main.storyboard */; };
+		7EB0CA7F207C59F200EE5680 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EB0CA7E207C59F200EE5680 /* Assets.xcassets */; };
+		7EB0CA82207C59F200EE5680 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EB0CA80207C59F200EE5680 /* LaunchScreen.storyboard */; };
+		7EB0CA85207C59F200EE5680 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EB0CA84207C59F200EE5680 /* main.m */; };
+		7EB0CA93207C93AE00EE5680 /* 1.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7EB0CA92207C93AE00EE5680 /* 1.m4a */; };
+		7EB0CA95207C972700EE5680 /* Music.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7EB0CA94207C972700EE5680 /* Music.jpg */; };
+		7EB0CA98207CAA1E00EE5680 /* 2.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7EB0CA97207CAA1E00EE5680 /* 2.m4a */; };
+		7EEFF5E6207DDEA0001DE792 /* VCSecond.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EEFF5E5207DDEA0001DE792 /* VCSecond.m */; };
+		7EEFF5E8207DEFA6001DE792 /* 01 Adventures.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 7EEFF5E7207DEFA6001DE792 /* 01 Adventures.m4a */; };
+		7EEFF5EA207DFC54001DE792 /* Angus & Julia Stone - Santa Monica Dream.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7EEFF5E9207DFC54001DE792 /* Angus & Julia Stone - Santa Monica Dream.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7EB0CA72207C59F000EE5680 /* 音乐播放.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "音乐播放.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EB0CA75207C59F000EE5680 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7EB0CA76207C59F000EE5680 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7EB0CA78207C59F000EE5680 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7EB0CA79207C59F000EE5680 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7EB0CA7C207C59F000EE5680 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7EB0CA7E207C59F200EE5680 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7EB0CA81207C59F200EE5680 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7EB0CA83207C59F200EE5680 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7EB0CA84207C59F200EE5680 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7EB0CA92207C93AE00EE5680 /* 1.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 1.m4a; sourceTree = "<group>"; };
+		7EB0CA94207C972700EE5680 /* Music.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Music.jpg; sourceTree = "<group>"; };
+		7EB0CA97207CAA1E00EE5680 /* 2.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = 2.m4a; sourceTree = "<group>"; };
+		7EBC8E28207E3E6F00EA5E04 /* 音乐播放.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "音乐播放.entitlements"; sourceTree = "<group>"; };
+		7EEFF5E4207DDEA0001DE792 /* VCSecond.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VCSecond.h; sourceTree = "<group>"; };
+		7EEFF5E5207DDEA0001DE792 /* VCSecond.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VCSecond.m; sourceTree = "<group>"; };
+		7EEFF5E7207DEFA6001DE792 /* 01 Adventures.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "01 Adventures.m4a"; sourceTree = "<group>"; };
+		7EEFF5E9207DFC54001DE792 /* Angus & Julia Stone - Santa Monica Dream.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Angus & Julia Stone - Santa Monica Dream.mp3"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7EB0CA6F207C59F000EE5680 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7EB0CA69207C59F000EE5680 = {
+			isa = PBXGroup;
+			children = (
+				7EB0CA74207C59F000EE5680 /* 音乐播放 */,
+				7EB0CA73207C59F000EE5680 /* Products */,
+				7EBC8E29207E3E7200EA5E04 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7EB0CA73207C59F000EE5680 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7EB0CA72207C59F000EE5680 /* 音乐播放.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7EB0CA74207C59F000EE5680 /* 音乐播放 */ = {
+			isa = PBXGroup;
+			children = (
+				7EBC8E28207E3E6F00EA5E04 /* 音乐播放.entitlements */,
+				7EB0CA91207C93AE00EE5680 /* Music */,
+				7EB0CA75207C59F000EE5680 /* AppDelegate.h */,
+				7EB0CA76207C59F000EE5680 /* AppDelegate.m */,
+				7EB0CA78207C59F000EE5680 /* ViewController.h */,
+				7EB0CA79207C59F000EE5680 /* ViewController.m */,
+				7EEFF5E4207DDEA0001DE792 /* VCSecond.h */,
+				7EEFF5E5207DDEA0001DE792 /* VCSecond.m */,
+				7EB0CA7B207C59F000EE5680 /* Main.storyboard */,
+				7EB0CA7E207C59F200EE5680 /* Assets.xcassets */,
+				7EB0CA80207C59F200EE5680 /* LaunchScreen.storyboard */,
+				7EB0CA83207C59F200EE5680 /* Info.plist */,
+				7EB0CA84207C59F200EE5680 /* main.m */,
+			);
+			path = "音乐播放";
+			sourceTree = "<group>";
+		};
+		7EB0CA91207C93AE00EE5680 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				7EB0CA92207C93AE00EE5680 /* 1.m4a */,
+				7EB0CA97207CAA1E00EE5680 /* 2.m4a */,
+				7EEFF5E9207DFC54001DE792 /* Angus & Julia Stone - Santa Monica Dream.mp3 */,
+				7EEFF5E7207DEFA6001DE792 /* 01 Adventures.m4a */,
+				7EB0CA94207C972700EE5680 /* Music.jpg */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		7EBC8E29207E3E7200EA5E04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7EB0CA71207C59F000EE5680 /* 音乐播放 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7EB0CA88207C59F200EE5680 /* Build configuration list for PBXNativeTarget "音乐播放" */;
+			buildPhases = (
+				7EB0CA6E207C59F000EE5680 /* Sources */,
+				7EB0CA6F207C59F000EE5680 /* Frameworks */,
+				7EB0CA70207C59F000EE5680 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "音乐播放";
+			productName = "音乐播放";
+			productReference = 7EB0CA72207C59F000EE5680 /* 音乐播放.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7EB0CA6A207C59F000EE5680 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "万家乐";
+				TargetAttributes = {
+					7EB0CA71207C59F000EE5680 = {
+						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 7EB0CA6D207C59F000EE5680 /* Build configuration list for PBXProject "音乐播放" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7EB0CA69207C59F000EE5680;
+			productRefGroup = 7EB0CA73207C59F000EE5680 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7EB0CA71207C59F000EE5680 /* 音乐播放 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7EB0CA70207C59F000EE5680 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EEFF5EA207DFC54001DE792 /* Angus & Julia Stone - Santa Monica Dream.mp3 in Resources */,
+				7EB0CA82207C59F200EE5680 /* LaunchScreen.storyboard in Resources */,
+				7EEFF5E8207DEFA6001DE792 /* 01 Adventures.m4a in Resources */,
+				7EB0CA7F207C59F200EE5680 /* Assets.xcassets in Resources */,
+				7EB0CA95207C972700EE5680 /* Music.jpg in Resources */,
+				7EB0CA98207CAA1E00EE5680 /* 2.m4a in Resources */,
+				7EB0CA93207C93AE00EE5680 /* 1.m4a in Resources */,
+				7EB0CA7D207C59F000EE5680 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7EB0CA6E207C59F000EE5680 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7EB0CA7A207C59F000EE5680 /* ViewController.m in Sources */,
+				7EB0CA85207C59F200EE5680 /* main.m in Sources */,
+				7EEFF5E6207DDEA0001DE792 /* VCSecond.m in Sources */,
+				7EB0CA77207C59F000EE5680 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7EB0CA7B207C59F000EE5680 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EB0CA7C207C59F000EE5680 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7EB0CA80207C59F200EE5680 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7EB0CA81207C59F200EE5680 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7EB0CA86207C59F200EE5680 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7EB0CA87207C59F200EE5680 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7EB0CA89207C59F200EE5680 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = THA52JVWKJ;
+				INFOPLIST_FILE = "音乐播放/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.flytoyou.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7EB0CA8A207C59F200EE5680 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = THA52JVWKJ;
+				INFOPLIST_FILE = "音乐播放/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.flytoyou.----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7EB0CA6D207C59F000EE5680 /* Build configuration list for PBXProject "音乐播放" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EB0CA86207C59F200EE5680 /* Debug */,
+				7EB0CA87207C59F200EE5680 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7EB0CA88207C59F200EE5680 /* Build configuration list for PBXNativeTarget "音乐播放" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EB0CA89207C59F200EE5680 /* Debug */,
+				7EB0CA8A207C59F200EE5680 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7EB0CA6A207C59F000EE5680 /* Project object */;
+}
