@@ -19,11 +19,13 @@
     [super viewDidLoad];
     
     isPlay = NO;
+    //获取上一次播放的位置
     NSUserDefaults* ud = [NSUserDefaults standardUserDefaults];
-    int n = [ud integerForKey:@"num"];
+    NSInteger n = [ud integerForKey:@"num"];
     num = n;
+    
     [self getMusicUrl];
-    [self getSystemSize];
+    [self createView];
     [self createAVPlyaer];
 }
 
@@ -31,9 +33,8 @@
 {
     //NSLog(@"viewWillAppear 视图即将显示");
     NSUserDefaults* ud = [NSUserDefaults standardUserDefaults];
-    int n = [ud integerForKey:@"num"];
+    NSInteger n = [ud integerForKey:@"num"];
     if (num == n) {
-        
     }else{
         num = n;
         [self createAVPlyaer];
@@ -46,13 +47,13 @@
 }
 
 //获取屏幕尺寸并处理UI
-- (void) getSystemSize {
+- (void) createView {
     _phoneWidth = [UIScreen mainScreen].bounds.size.width;
     _typeHeight = [[UIApplication sharedApplication] statusBarFrame].size.height;
     _titleHeight = self.navigationController.navigationBar.frame.size.height;
     _phoneHeight = [UIScreen mainScreen].bounds.size.height - _typeHeight - _titleHeight;
     
-    self.title = @"Music";
+    self.title = @"Music";//导航栏标题
     self.view.backgroundColor = [UIColor whiteColor];
     UIBarButtonItem* btn = [[UIBarButtonItem alloc] initWithTitle:@"PlayList" style:UIBarButtonItemStylePlain target:self action:@selector(pressRight)];
     self.navigationItem.leftBarButtonItem = btn;
@@ -61,6 +62,7 @@
     _iView = [[UIImageView alloc] initWithFrame:CGRectMake(30,_titleHeight+_typeHeight+30,_phoneWidth-60, _phoneWidth-60)];
     _iView.image = [UIImage imageNamed:[NSString stringWithFormat:@"Music.jpg"]];
     [self.view addSubview:_iView];
+    
     //音乐进度条
     _musicPress = [[UISlider alloc] init];
     _musicPress.frame = CGRectMake(30,_iView.frame.origin.y+_iView.frame.size.height+30, _phoneWidth-60, 5);
@@ -70,32 +72,37 @@
     [_musicPress addTarget:self action:@selector(volChange:) forControlEvents:UIControlEventValueChanged];
     _musicPress.tag = 101;
     [self.view addSubview:_musicPress];
+    
     //歌曲名
     _label = [[UILabel alloc] initWithFrame:CGRectMake(60, (_phoneHeight-_musicPress.frame.origin.y-_musicPress.frame.size.height)/5+_musicPress.frame.origin.y, _phoneWidth-120, 20)];
     _label.text = @"歌曲名";
-    _label.textAlignment = UITextAlignmentCenter;
+    _label.textAlignment = NSTextAlignmentCenter;
     [self.view addSubview:_label];
+    
     //播放按钮
     _btnPlayer = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     _btnPlayer.frame = CGRectMake((_phoneWidth-50)/2,(_phoneHeight-_label.frame.origin.y-_label.frame.size.height)/2+_label.frame.origin.y, 50, 40);
     [_btnPlayer setTitle:@"播放" forState:UIControlStateNormal];
-    _btnPlayer.titleLabel.textAlignment = UITextAlignmentCenter;
+    _btnPlayer.titleLabel.textAlignment = NSTextAlignmentCenter;
     [_btnPlayer addTarget:self action:@selector(pressPlay) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_btnPlayer];
+    
     //上一首
     _btnPause = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     _btnPause.frame = CGRectMake(30, _btnPlayer.frame.origin.y, 50, 40);
     [_btnPause setTitle:@"上一首" forState:UIControlStateNormal];
-    _btnPlayer.titleLabel.textAlignment = UITextAlignmentLeft;
+    _btnPlayer.titleLabel.textAlignment = NSTextAlignmentLeft;
     [_btnPause addTarget:self action:@selector(pressLast) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_btnPause];
+    
     //下一首
     _btnStop = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     _btnStop.frame = CGRectMake(_phoneWidth-80, _btnPlayer.frame.origin.y, 50, 40);
     [_btnStop setTitle:@"下一首" forState:UIControlStateNormal];
-    _btnPlayer.titleLabel.textAlignment = UITextAlignmentRight;
+    _btnPlayer.titleLabel.textAlignment = NSTextAlignmentRight;
     [_btnStop addTarget:self action:@selector(pressNext) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_btnStop];
+    
     //音量控制
     _volSlider = [[UISlider alloc] init];
     _volSlider.frame = CGRectMake(30, _phoneHeight+_typeHeight+_titleHeight-30, _phoneWidth-60, 5);

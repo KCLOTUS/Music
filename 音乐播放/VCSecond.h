@@ -19,8 +19,8 @@ AVAudioPlayerDelegate>
     UITableView* _tableView;
     
     //用来处理音乐数据
-    NSMutableArray* _m4aArray;
-    NSMutableArray* _mp3Array;
+    NSArray* _m4aArray;
+    NSArray* _mp3Array;
     NSMutableArray* _musicArray;
     NSMutableArray* _urlArray;
     

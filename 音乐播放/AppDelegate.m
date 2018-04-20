@@ -19,18 +19,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //创建一个Window对象
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    [self.window makeKeyAndVisible];
-    
-    ViewController* vc = [[ViewController alloc] init];
-    VCSecond* vcs = [[VCSecond alloc] init];
-    
-    NSArray* array = [NSArray arrayWithObjects:vcs,vc,nil];
+
+    //创建导航控制器 P:导航控制器根视图
     UINavigationController* nav = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
-    nav.viewControllers = array;
-    
+    //根视图控制器赋值
     self.window.rootViewController = nav;
     
+    //将window作为主视图并显示
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
